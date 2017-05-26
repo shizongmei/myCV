@@ -1,0 +1,618 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 16px/1.8 "microsoft yahei";
+}
+#dowebok .section {
+  position: relative;
+  overflow: hidden;
+}
+#dowebok .page1 {
+  text-align: center;
+}
+#dowebok .page1 .bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 850px;
+  background: url("../images/section1.jpg") no-repeat center center;
+  background-size: cover;
+}
+#dowebok .page1 .bg12 {
+  position: absolute;
+  bottom: -300px;
+  width: 100%;
+  height: 392px;
+  background: url(../images/bg12.png) 50% 0 no-repeat;
+  opacity: 0;
+  transition: all 1.7s;
+}
+#dowebok .page1 .bg13 {
+  position: absolute;
+  bottom: -337px;
+  width: 100%;
+  height: 377px;
+  background: url(../images/bg13.png) 50% 0 no-repeat;
+  transition: all 1s;
+}
+#dowebok .page1 .grjl {
+  position: absolute;
+  top: 20px;
+  left: 20%;
+  width: 60%;
+  height: 200px;
+  transform: translateX(-200%);
+  background: url("../images/grjl.png") no-repeat;
+}
+#dowebok .page1 .music {
+  width: 80px;
+  height: 80px;
+  background: url("../images/musicBtn.png") no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  animation: rot 2s linear infinite;
+}
+#dowebok .page1 .left-base {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  transform: translateX(-200%);
+}
+#dowebok .page1 .right-tel {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  right: 10%;
+  bottom: -120px;
+  transform: translateX(200%);
+}
+#dowebok .page1 h4 {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  color: #408043;
+  font-size: 50px;
+  text-shadow: 0 2px 5px #408043;
+}
+#dowebok .page1.current .bg12 {
+  bottom: 90px;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+#dowebok .page1.current .bg13 {
+  bottom: 0;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+#dowebok .page1.current .left-base {
+  transform: translateX(0);
+  transition: transform 1s 1.5s;
+}
+#dowebok .page1.current .right-tel {
+  transform: translateX(0);
+  transition: transform 1s 2s;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#dowebok .page2 .bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 850px;
+  background: url("../images/section2.jpg") no-repeat center center;
+  background-size: cover;
+}
+#dowebok .page2 .corner {
+  width: 5%;
+  position: absolute;
+  font-size: 50px;
+  color: skyblue;
+  font-weight: 700;
+  font-family: simsun;
+}
+#dowebok .page2 .corner1 {
+  left: 5%;
+  top: 5%;
+}
+#dowebok .page2 .corner1 h4 {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+#dowebok .page2 .corner2 {
+  left: 5%;
+  top: 20%;
+}
+#dowebok .page2 .corner2 h4 {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+#dowebok .page2 .corner3 {
+  left: 12%;
+  top: 5%;
+}
+#dowebok .page2 .corner3 h4 {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+#dowebok .page2 .corner4 {
+  left: 12%;
+  top: 20%;
+}
+#dowebok .page2 .corner4 h4 {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+#dowebok .page2 .pc .input {
+  width: 529px;
+  height: 66px;
+  position: absolute;
+  left: 8%;
+  top: 35%;
+  transform: translateX(-200%);
+  background: url(../images/search.png) no-repeat;
+  background-color: pink;
+}
+#dowebok .page2 .pc .input h4 {
+  height: 20px;
+  outline: hidden;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  width: 0;
+}
+#dowebok .page2 .pc .result {
+  text-indent: 2em;
+  width: 530px;
+  height: 350px;
+  position: absolute;
+  left: 8%;
+  bottom: 0;
+  transform: translateY(-200%);
+  background: url("../images/tree.jpg") no-repeat left top;
+  background-size: cover;
+}
+#dowebok .page2 .mol .input {
+  width: 529px;
+  height: 66px;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  transform: translateX(200%);
+  background: url(../images/search.png) no-repeat;
+  background-color: pink;
+}
+#dowebok .page2 .mol .input h4 {
+  height: 20px;
+  outline: hidden;
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  width: 0;
+}
+#dowebok .page2 .mol .result {
+  text-indent: 2em;
+  width: 530px;
+  height: 200px;
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  transform: translateY(300%);
+  background: url("../images/tree.jpg") no-repeat;
+  background-position: 0px  40%;
+  background-size: cover;
+}
+#dowebok .page2 .circle {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+  background: url("../images/circle1.png") no-repeat;
+  background-size: cover;
+  animation: rot 4s linear infinite;
+}
+#dowebok .page2 .me {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 15%;
+  bottom: 8%;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: url("../images/me.png") no-repeat;
+  background-size: cover;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 2s;
+}
+#dowebok .page2.current .corner {
+  animation: rot 2s;
+}
+#dowebok .page2.current .pc .input {
+  transform: translateX(0);
+  transition: transform 1s 1s;
+}
+#dowebok .page2.current .pc .input h4 {
+  width: 200px;
+  transition: all 2s 2s steps(7);
+}
+#dowebok .page2.current .pc .result {
+  transform: translateY(0);
+  transition: transform 1s 3.5s;
+}
+#dowebok .page2.current .mol .input {
+  transform: translateX(0);
+  transition: transform 1s 4.5s;
+}
+#dowebok .page2.current .mol .input h4 {
+  width: 200px;
+  transition: all 2s 5s steps(7);
+}
+#dowebok .page2.current .mol .result {
+  transform: translateY(0);
+  transition: transform 1s 6.5s;
+}
+#dowebok .page2.current .me {
+  position: absolute;
+  right: 15%;
+  bottom: 8%;
+  opacity: 1;
+  transform: scale(1);
+}
+#dowebok .page3 .bg {
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  height: 850px;
+  background: url("../images/section3.jpg") no-repeat center center;
+  background-size: contain;
+}
+#dowebok .page3 .corner-out .corner {
+  position: absolute;
+  font-size: 60px;
+  color: skyblue;
+  font-weight: 700;
+  font-family: simsun;
+  text-shadow: 0px -2px 10px #Fff, 0px -10px 41px yellowgreen, 0px -46px 91px skyblue;
+}
+#dowebok .page3 .corner-out .corner1 {
+  left: 0;
+  top: 0;
+  font-size: 100px;
+}
+#dowebok .page3 .corner-out .corner2 {
+  left: 5%;
+  top: 20%;
+}
+#dowebok .page3 .corner-out .corner3 {
+  left: 12%;
+  top: 5%;
+}
+#dowebok .page3 .corner-out .corner4 {
+  left: 12%;
+  top: 20%;
+}
+#dowebok .page3 .spance1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 12%;
+  bottom: 8%;
+  text-align: center;
+  transition: all 1s;
+  transform-origin: top center;
+}
+#dowebok .page3 .spance1 h4 {
+  width: 200px;
+  height: 50px;
+  font: 40px/50px "simsun";
+  font-weight: 700;
+}
+#dowebok .page3 .spance1 p {
+  font: 25px/35px "simsun";
+  color: #B4ABCD;
+}
+#dowebok .page3 .spance2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 30%;
+  top: 55%;
+  text-align: center;
+  transition: all 1s;
+  transform-origin: top center;
+}
+#dowebok .page3 .spance2 h4 {
+  font: 35px/45px "microsoft yahei";
+  font-weight: 700;
+}
+#dowebok .page3 .spance2 p {
+  font: 25px/35px "microsoft yahei";
+  color: #8ECD7D;
+}
+#dowebok .page3 .spance3 {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  position: absolute;
+  left: 48%;
+  bottom: 5%;
+  transition: all 1s;
+  transform-origin: top center;
+}
+#dowebok .page3 .spance3 h4 {
+  font: 35px/45px "microsoft yahei";
+  font-weight: 700;
+}
+#dowebok .page3 .spance3 p {
+  font: 25px/35px "microsoft yahei";
+  color: #CD546C;
+}
+#dowebok .page3 .spance4 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  position: absolute;
+  right: 25%;
+  top: 42%;
+  transition: all 1s;
+  transform-origin: top center;
+}
+#dowebok .page3 .spance4 h4 {
+  font: 30px/40px "microsoft yahei";
+  font-weight: 700;
+}
+#dowebok .page3 .spance4 p {
+  font: 22px/30px "microsoft yahei";
+  color: #6ACDC8;
+}
+#dowebok .page3 .spance5 {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  transition: all 1s;
+  transform-origin: top center;
+}
+#dowebok .page3 .spance5 h4 {
+  font: 35px/45px "microsoft yahei";
+  font-weight: 700;
+}
+#dowebok .page3 .spance5 p {
+  font: 25px/35px "microsoft yahei";
+  color: yellow;
+}
+#dowebok .page3 .wind {
+  width: 60px;
+  height: 84px;
+  background: url("../images/wind-trace.png") no-repeat;
+}
+#dowebok .page3 .wind1 {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  animation: move 3s infinite linear;
+}
+#dowebok .page3 .wind2 {
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  animation: move 3s infinite 1s linear;
+}
+#dowebok .page3 .wind3 {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  animation: move 3s infinite 1.5s linear;
+}
+#dowebok .page3.current .spance {
+  animation: rot1 3s linear infinite;
+}
+@keyframes rot1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-1400px, 1400px) rotate(0deg);
+  }
+}
+#dowebok .page4 .bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 850px;
+  background: url("../images/section4.jpg") no-repeat center center;
+  background-size: cover;
+}
+#dowebok .page4 .fengche {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  background: url("../images/fengche.png") no-repeat;
+  background-size: 100%;
+  animation: rot 1s linear infinite;
+}
+#dowebok .page4 .text {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font: 80px/100px "simsun";
+  font-weight: 800;
+  color: skyblue;
+  text-align: center;
+}
+#dowebok .page4 .fly1 {
+  width: 43px;
+  height: 26px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../images/bg84.png") no-repeat;
+}
+#dowebok .page4 .fly2 {
+  width: 70px;
+  height: 29px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../images/bg83.png") no-repeat;
+}
+#dowebok .page4 .fly3 {
+  width: 164px;
+  height: 117px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../images/bg82.png") no-repeat;
+}
+#dowebok .page4 ol {
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font: 25px/50px "simsun";
+}
+#dowebok .page4 ol li {
+  transform: translateX(200%);
+}
+#dowebok .page4.current .fly1 {
+  right: 60%;
+  bottom: 60%;
+  transition: all 1s 1s;
+}
+#dowebok .page4.current .fly2 {
+  right: 50%;
+  bottom: 50%;
+  transition: all 1s 0.5s;
+}
+#dowebok .page4.current .fly3 {
+  right: 30%;
+  bottom: 30%;
+  transition: all 1s;
+}
+#dowebok .page4.current ol li:nth-child(1) {
+  transform: translateX(0);
+  transition: transform 0.5s 1.2s;
+}
+#dowebok .page4.current ol li:nth-child(2) {
+  transform: translateX(0);
+  transition: transform 0.5s 1.4s;
+}
+#dowebok .page4.current ol li:nth-child(3) {
+  transform: translateX(0);
+  transition: transform 0.5s 1.6s;
+}
+#dowebok .page4.current ol li:nth-child(4) {
+  transform: translateX(0);
+  transition: transform 0.5s 1.8s;
+}
+#dowebok .page4.current ol li:nth-child(5) {
+  transform: translateX(0);
+  transition: transform 0.5s 2s;
+}
+#dowebok .page4.current ol li:nth-child(6) {
+  transform: translateX(0);
+  transition: transform 0.5s 2.2s;
+}
+#dowebok .page5 .bg1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 850px;
+  background: url("../images/bg41.png") no-repeat center center;
+}
+#dowebok .page5 .bg2 {
+  position: absolute;
+  bottom: -300px;
+  width: 100%;
+  height: 392px;
+  background: url(../images/bg42.png) 50% 0 no-repeat;
+  opacity: 0;
+  transition: all 1.7s;
+}
+#dowebok .page5 .bg3 {
+  position: absolute;
+  bottom: -337px;
+  width: 100%;
+  height: 377px;
+  background: url(../images/bg43.png) 50% 0 no-repeat;
+  transition: all 1s;
+}
+#dowebok .page5 .text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  font-size: 100px;
+  font-family: "simsun";
+  font-weight: 800;
+  color: skyblue;
+  text-shadow: 10px 10px 5px pink;
+  transform: scale(0.2);
+}
+#dowebok .page5 .tips{
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      font-size: 20px;
+  font-family: "simsun";
+  font-weight: 100;
+  text-shadow: 10px 10px 5px pink; 
+
+}
+#dowebok .page5.current .bg2 {
+  bottom: 90px;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+#dowebok .page5.current .bg3 {
+  bottom: 0;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+#dowebok .page5.current .text {
+  transform: scale(1);
+  transition: all 3s;
+}
